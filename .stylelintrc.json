@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "indentation": [2],
+    "selector-pseudo-class-no-unknown": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": [
+      "error",
+      {
+        "ignore": [
+          "/stylelint-disable no-descending-specificity/",
+          "no-descending-specificity"
+        ]
+      }
+    ]
+  }
+}
